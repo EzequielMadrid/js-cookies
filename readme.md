@@ -7,7 +7,7 @@
   - [This Is JavaScript](https://eloquentjavascript.net/)
 
 - **Think Like a Programmer**
-  - [20% CODE | 80% THINK](https://archive.org/details/think-like-a-programmer)
+  - [20% Code 80% Think](https://archive.org/details/think-like-a-programmer)
 
 ## Platforms 🧠
 
@@ -24,5 +24,5 @@
 
 ## 3D Programming 👽
 
-- **Three.js**: Enter the realm of immersive experiences and breathtaking visuals with Three.js. Unleash your creativity and build stunning 3D worlds right in your browser.
+- **Three.js**
   - [The Metaverse Is Real](https://threejs.org/)
