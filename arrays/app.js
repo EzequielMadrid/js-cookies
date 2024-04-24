@@ -44,31 +44,6 @@ personas.sort((a, b) => a.name - b.name); // error ! ❌
 personas.sort((a, b) => a.name.localeCompare(b.name)); // correct 👍
 console.log(personas);
 
-// chequeador de contras 👁️
-/* 
-let pass = "coder123";
-let res;
-let entryCount = 0;
-let limits = 3;
-let err = false;
-
-const checkApp = () => {
-  while (true) {
-    if (entryCount < limits) {
-      res = prompt("ponga su contra antes de entrar");
-      entryCount++;
-    } else {
-      err = true;
-    }
-  }
-  if (err) {
-    alert("oops!");
-  } else {
-    alert("login exitoso!");
-  }
-};
-checkApp() */
-
 // truco Argento 🔥
 let trucoDeck = []; // maso o baraja
 const suits = ["swords", "coins", "cups", "clubs"]; // palos
