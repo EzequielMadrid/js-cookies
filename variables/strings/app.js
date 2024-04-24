@@ -8,6 +8,7 @@ comments
 variables: pensar en ellas como tentáculos 🐙
 Las variables en realidad no es que "encierren" los valores(como una caja); 
 más bien los agarra (como un tentáculo)  
+
 🔴formula: keyword(let o const) + name = value(type of data);
 
 Variables naming conventions
@@ -20,10 +21,12 @@ Variables naming conventions
 let user = "peter"; // let puede cambiar su valor
 const server = "mundo-2"; // const nunca cambia su valor
 
-// 🔥 booleans? => George Boole
+// 🔥 Why booleans? => George Boole
 let isStock = false;
 
-/* characters that are illegal in a string are called "escape characters"
+/* 
+characters that are illegal 
+in a string are called "escape characters"
    \'
    \"
    \\
@@ -31,12 +34,15 @@ let isStock = false;
    \t
 */
 
-/* backtics  comillas inversas => ` `
-   desbloquea ${} => template strings
-                     nos ayudan a sumar strings(concatenacion) 
+/* 
+   backtics          => ` ` (comillas inversas)
+   
+   desbloquean       => ${} (template strings)
+                        nos ayudan a sumar strings(concatenación) 
 */
 
-/* concatenation("string" + "string" + "string")
+/* 
+concatenation("string" + "string" + "string")
 1)console.log("I'm " + user);
 2)console.log("I'm", user);
 3)console.log(`I'm ${user}`); 
@@ -46,7 +52,7 @@ let isStock = false;
 let greeting = "Hi everyone !";
 let nickName = "PeTeR";
 
-console.log(greeting.length); // property most important
+console.log(greeting.length); // most important
 
 console.log(nickName.toLowerCase()); // return text to lower case
 console.log(nickName.toUpperCase()); // return text to upper case
@@ -57,7 +63,9 @@ console.log(nickName.includes("P")); // return a boolean
 
 console.log(greeting.replace("Hi", "Hello")); // return a new value
 
+// H i
+// 0 1
 console.log(greeting.indexOf("H")); // return 0 ❗
 
-// 0 => enero
-// 0 => domingo
+// 0 => enero (january)
+// 0 => domingo (sunday)
