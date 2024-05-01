@@ -163,7 +163,7 @@ const startGame = generateMagicNumber();
 /******************************************************************************/
 
 // validating a switch() in a POKER situation 🌟
-const getCartaAndPalo = (cardNumber) => {
+const getCartaAndPalo = () => {
   // validando cartas
   const getCardNames = (number) => {
     let card;
