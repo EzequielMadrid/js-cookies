@@ -129,11 +129,11 @@ const generateMagicNumber = () => {
   let chances = 3;
   const guesser = () => {
     const adivinanza = parseInt(
-      prompt("Adivina magic number: Entre 1 y 5\ntiene 3 chances")
+      prompt("Adivina el N° MAGICO: Entre 1 y 5\ntiene 3 chances")
     );
 
     if (isNaN(adivinanza) || adivinanza < 1 || adivinanza > 5) {
-      alert("porfavor ingresa num entre 1 y 5");
+      alert("Porfavor ingresa num entre 1 y 5");
       return guesser(); // retornar la función para volver a mostrar el código
     }
     if (adivinanza === MAGIC_NUMBER) {
@@ -143,7 +143,7 @@ const generateMagicNumber = () => {
     } else {
       chances--;
       if (chances === 0) {
-        alert("perdiste, magic number era: " + MAGIC_NUMBER);
+        alert("perdiste, el N° MAGICO era: " + MAGIC_NUMBER);
         return;
       } else {
         alert("vuelva a intentar " + chances + "/3 chances");
