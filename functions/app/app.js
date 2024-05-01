@@ -49,6 +49,7 @@ function currySum(x) {
 }
 currySum(2)(3)(5);
 /******************************************************************************/
+
 //reusing data with currying 🧠
 /* normal (f) */
 function greet(greeting, user) {
@@ -92,6 +93,7 @@ function evaluate(operation) {
 const remainder = evaluate("remainder"); // partial APP
 //console.log(remainder(10)(3));
 /******************************************************************************/
+
 // game 1
 // configuramos contraseña nosotros para que el usuario/cliente adivine la llave secreta
 const SECRET_KEY = "database";
@@ -121,6 +123,7 @@ function runGuesser() {
   }
 }
 // runGuesser();
+/******************************************************************************/
 
 // game 2
 // la APP nos genera un n° random entre 1 y 5, para que el usuario/cliente adivine directamente
