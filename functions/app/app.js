@@ -1,4 +1,5 @@
 // condition vs validation
+/* 
 let isAdmin = true;
 let isGroup = false;
 if (isAdmin && isGroup) {
@@ -7,7 +8,7 @@ if (isAdmin && isGroup) {
   console.log("user is only a member");
 } else {
   console.log("user is not in existence!");
-}
+} */
 
 // transformamos en validacion una condición
 function validarUsuario(isAdmin, isGroup) {
