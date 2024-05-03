@@ -23,5 +23,11 @@ Si quiero comer
             pido hamburguesas
 Sino hay niguno de esos menús
     pido un trago
-
 */
+// validando si un n° es decimal o no
+let x = 7.99;
+if (!Number.isInteger(x)) {
+  console.log(x + " es decimal");
+} else {
+  console.log(x + " no es decimal");
+}
