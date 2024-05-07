@@ -37,7 +37,7 @@ function renderCart() {
       .join("");
   }
 
-  localStorage.setItem("My Favorites", JSON.stringify(cart));
+  localStorage.setItem("My Favs", JSON.stringify(cart));
 }
 
 function removeFromCart(index) {
@@ -58,8 +58,6 @@ myData.forEach((x) => {
   mySection.innerHTML += myArticle;
 });
 
-// creo variable acá porque este button fue agreagado en la línea 48
-// agregas like-btn en su "class" para manipularlo mejor
 const likeButtons = document.querySelectorAll(".like-btn");
 likeButtons.forEach((button, index) => {
   button.addEventListener("click", () => {
@@ -74,22 +72,12 @@ toggleCartButton.addEventListener("click", function showCart() {
   cartModal.classList.remove("hidden");
 });
 
-// **onload or event load**
-// Al hacer f5 me guarda todo en el carrito y en el Local
 window.addEventListener("load", function () {
-  const savedCart = localStorage.getItem("cartItems");
+  const savedCart = localStorage.getItem("My Favs");
   if (savedCart) {
     cart = JSON.parse(savedCart);
     renderCart();
   }
 });
-/* 
-// Ejemplo SIN addEventListener()
-window.onload = function () {
-  const savedCart = localStorage.getItem("cartItems");
-  if (savedCart) {
-    cart = JSON.parse(savedCart);
-    renderCart();
-  }
-}; 
-*/
+
+renderCart(); // vuelvo a llamar para mostrar mensaje vacío del "cart"
