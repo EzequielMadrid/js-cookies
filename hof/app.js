@@ -2,57 +2,16 @@
 what's hoisting ⁉️
     variables & functions at top 
     arrow functions are rejected!
+
+console.log(sumar(2, 4));
+const sumar = (a, b) => a + b;
+function sumar(a, b) { 
+    return a + b;
+}
 */
-
 /* ****************************************************** */
 
-/* 
-languages => paradigms => methodology
-
-functional programming(input-ouput) => pure function
-                                       is divided in 2 parts (FCF & HOF)
- */
-// 1)first class function => FCF
-function createTeam(teamName) {
-  return function addPlayerToTeam(playerName) {
-    return console.log(`Welcome ${playerName}, you're team on: ${teamName}`);
-  };
-}
-// createTeam() accepts an argument and RETURN a function
-let chicagoBulls = createTeam("Bulls");
-chicagoBulls("Jordan");
-chicagoBulls("Pippen");
-let sanAntonio = createTeam("Spurs");
-sanAntonio("Ginobilli");
-sanAntonio("Duncan");
-
-/* ****************************************************** */
-
-// 2) higher order function => HOF
-function greet(greeting, user) {
-  return `${greeting} ${user}`;
-}
-
-// currying (Haskell Curry)
-//          is a technique => series of functions
-
-function curryGreet(greeting) {
-  return function (name) {
-    return `${greeting} ${user} !`;
-  };
-}
-
-const greetItalian = curryGreet("Ciao");
-greetItalian("Giuseppe");
-greetItalian("Luiggi");
-const greetTexan = curryGreet("Howdy");
-greetTexan("Elon");
-greetTexan("Ronald");
-/* ****************************************************** */
-
-// closures and scope
-// cerraduras y ambiente de variables
-
+// closures & scope ===>cerraduras y ambiente de variables
 function outerFunction() {
   let outerVariable = "I am from outer function";
   function innerFunction() {
@@ -61,9 +20,15 @@ function outerFunction() {
   return innerFunction;
 }
 const theInsider = outerFunction();
-theInsider();
-
+// theInsider();
 /* ****************************************************** */
+
+/* 
+languages ===> paradigms ===> methodology
+
+functional programming(input-ouput) => pure function
+                                       is divided in 2 parts (FCF & HOF)
+ */
 
 const animals = [
   { name: "Hamilton", species: "dog" },
