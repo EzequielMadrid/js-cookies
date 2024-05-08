@@ -1,18 +1,34 @@
-/* old school arrays
-const frutas = new Array("banana", "manzana", "uva");
- */
+/* Array[]    ===>  Colección de data 🔥
+                    Una variable transformada en estructura
+                    que puede sostener más de un valor(data type)
+                    
+                    [ 1 , 2 , 3 ]  ====> each value === elements
+                      0   1   2    ====> each index === position
+                    
+                    old school syntax
+                    const frutas = new Array("banana", "manzana", "uva");
+                    new school syntax
+                    const frutas = ["banana", "manzana", "uva"]                    
+*/
 
 // 2d Arrays 📱
-/* 
 const phonePad = [
   ["1", "2", "3"],
   ["4", "5", "6"],
   ["7", "8", "9"],
   ["*", "0", "#"],
 ];
-console.log(phonePad); 
-*/
+//console.log(phonePad);
 
+// un loop dentro de un loop ♾️
+for (let i = 0; i < phonePad.length; i++) {
+  for (let j = 0; j < phonePad[i].length; j++) {
+    document.write(phonePad[i][j]);
+  }
+  document.write(`<br>`);
+}
+
+/* ************************************************************************ */
 //// sort() => order numbers lexicographically(symbols,letters,nums)
 ////           not alphabetically(only letters)
 /* 
@@ -25,101 +41,24 @@ console.log(num); // ✅
 num.sort((a, b) => b - a); // reverse order
 console.log(num);// ✅
 */
-const personas = [
+
+// objetos literales + el método sort()
+const personajes = [
   {
-    name: "calamardo",
-    age: 19,
+    name: "foggy nelson",
+    age: 32,
   },
   {
-    name: "bob esponja",
-    age: 21,
+    name: "matt murdock",
+    age: 34,
   },
   {
-    name: "patricio",
-    age: 24,
+    name: "jessica jones",
+    age: 29,
   },
 ];
 // string method => localeCompare()
-personas.sort((a, b) => a.name - b.name); // error ! ❌
-personas.sort((a, b) => a.name.localeCompare(b.name)); // correct 👍
-console.log(personas);
-
-// truco Argento 🔥
-let trucoDeck = []; // maso o baraja
-const suits = ["swords", "coins", "cups", "clubs"]; // palos
-let playerHands = []; // mano de cada jugador, 1 vs 1, 2 vs 2, 3 vs 3
-const ranks = ["1", "2", "3", "4", "5", "6", "7", "10", "11", "12"]; // cartas a usar
-
-function createTrucoDeck() {
-  //console.log("creando maso...");
-  for (let suit of suits) {
-    for (let rank of ranks) {
-      trucoDeck.push({ rank: rank, suit: suit });
-    }
-  }
-}
-
-function shuffleTrucoDeck() {
-  //console.log("barajando...");
-  for (let i = trucoDeck.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * i + 1);
-    /* 
-    swap(technique or skill) === intercambio o destructuración de valores en javaScript
-    let a = 1;
-    let b = 2;
-
-    // intercambiando valores
-    [a, b] = [b, a];
-
-    console.log("a:", a); // output 2
-    console.log("b:", b); // output 1
-    */
-    [trucoDeck[i], trucoDeck[j]] = [trucoDeck[j], trucoDeck[i]];
-  }
-}
-
-function dealCards(numPlayers) {
-  //console.log("repartija");
-  for (let i = 0; i < numPlayers; i++) {
-    const hand = [];
-    /* ❗error de porque reparte 2 o 4 o 6
-       en vez de poner 3(num a repartir para c/u) pusimos numPlayer
-    for (let j = 0; j < numPlayer; j++) {
-      hand.push(trucoDeck.pop());
-     */
-    for (let j = 0; j < 3; j++) {
-      hand.push(trucoDeck.pop());
-    }
-    playerHands.push(hand);
-  }
-}
-
-createTrucoDeck();
-shuffleTrucoDeck();
-
-// 1 vs 1
-/* console.log("1 vs 1:");
-dealCards(2);
-console.log("Player 1's hand:", playerHands[0]);
-console.log("Player 2's hand:", playerHands[1]); */
-// 2 vs 2
-/* console.log("2 vs 2:");
-dealCards(4);
-console.log("Team 1, Player 1's hand:", playerHands[0]);
-console.log("Team 1, Player 2's hand:", playerHands[1]);
-console.log("Team 2, Player 1's hand:", playerHands[2]);
-console.log("Team 2, Player 2's hand:", playerHands[3]); */
-// 3 vs 3
-//console.log("3 vs 3:");
-dealCards(6);
-//console.log("Team 1, Player 1's hand:", playerHands[0]);
-/* document.write(
-  "<p>Player 1's hand: " + JSON.stringify(playerHands[0]) + "</p>"
-); */
-
-/* console.log("Team 1, Player 2's hand:", playerHands[1]);
-console.log("Team 1, Player 3's hand:", playerHands[2]);
-console.log("Team 2, Player 1's hand:", playerHands[3]);
-console.log("Team 2, Player 2's hand:", playerHands[4]);
-console.log("Team 2, Player 3's hand:", playerHands[5]);
- */
+personajes.sort((a, b) => a.age - b.age); // ordena objeto literal por n°
+personajes.sort((a, b) => a.name - b.name); // error! 👎
+personajes.sort((a, b) => a.name.localeCompare(b.name)); // correct 👍
+// console.log(personajes);
