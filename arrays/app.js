@@ -1,15 +1,20 @@
-/* Array[]    ===>  Colección de data 🔥
+/* 
+    Array[]    ===>  Colección de data 🔥
                     Una variable transformada en estructura
                     que puede sostener más de un valor(data type)
                     
                     [ 1 , 2 , 3 ]  ====> each value === elements
                       0   1   2    ====> each index === position
                     
-                    old school syntax
-                    const frutas = new Array("banana", "manzana", "uva");
-                    new school syntax
-                    const frutas = ["banana", "manzana", "uva"]                    
+                    Old school syntax
+                    const frutas = new Array("banana", "manzana", "uva")
+                    New school syntax
+                    const frutas = ["banana", "manzana", "uva"]
+                    
+                    Accediendo al elemento 3(uva) =====> frutas[2]
 */
+
+/* ************************************************************************ */
 
 // 2d Arrays 📱
 const phonePad = [
@@ -27,8 +32,8 @@ for (let i = 0; i < phonePad.length; i++) {
   }
   document.write(`<br>`);
 }
-
 /* ************************************************************************ */
+
 //// sort() => order numbers lexicographically(symbols,letters,nums)
 ////           not alphabetically(only letters)
 /* 
@@ -41,6 +46,7 @@ console.log(num); // ✅
 num.sort((a, b) => b - a); // reverse order
 console.log(num);// ✅
 */
+/* ************************************************************************ */
 
 // objetos literales + el método sort()
 const personajes = [
@@ -62,3 +68,4 @@ personajes.sort((a, b) => a.age - b.age); // ordena objeto literal por n°
 personajes.sort((a, b) => a.name - b.name); // error! 👎
 personajes.sort((a, b) => a.name.localeCompare(b.name)); // correct 👍
 // console.log(personajes);
+/* ************************************************************************ */
