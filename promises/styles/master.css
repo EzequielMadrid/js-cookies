@@ -1,0 +1,43 @@
+body {
+  background: #666;
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #000;
+}
+
+section {
+  text-align: center;
+}
+
+input {
+  padding: 12px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  background: #000;
+  color: cyan;
+}
+button {
+  padding: 12px;
+  border-radius: 5%;
+  border: none;
+  font-weight: bold;
+  background-color: #222;
+  color: cyan;
+}
+button:hover {
+  background-color: cyan;
+  color: #222;
+}
+img {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
