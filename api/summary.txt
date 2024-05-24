@@ -1,0 +1,83 @@
+🔥Summary => API🔥
+    
+    For Basic Creations of Any APP => API, 3D App, DAPPs, Games, etc 
+                                        ❌HTML && CSS NO alcanza❌
+
+  🔻Why variables or variants? => (1)store data && (2)manipulate data  
+
+  (1) storing data => data types
+
+      <elements/>     => DOM && Events    => week-7
+
+      🔻simple values
+        0
+        undefined
+        null
+        
+        strings... numbers... booleans... ???????
+
+      📟 DATA STRUCTURES 📟 
+  
+      🔻exceptions => accept methods && properties === OBJECT
+            numbers         => -31.00 
+            booleans        => isOnline
+            strings         => "user1"
+        
+      🔻Why OBJECTs in JS?  => OOP (Object-Oriented Programming) => LANG paradigm || style           
+
+        🔻Code Organization   => class => objects => methods && properties = prototype   
+
+        🔻NATIVEs Objects      => Math, document, console,
+
+                                  window.prompt() vs prompt()
+                                        old             new
+                        
+        🔻                     => natives(JAVASCRIPT) vs structures(PROGRAMMERS)
+
+      💥DATA COLLECTIONS💥
+
+        Objects{}       => { key:value, key:value, key:value }
+                       
+        ***Object es el objeto PADRE del lenguaje, de él derivan TODOS***
+        console.dir(Object.getOwnPropertyDescriptors(Function.prototype));
+ 
+
+        Arrays[]            => [ "user1", true , 31 ] =>   value    ===  element
+                                   0       1     2    =>  position  ===  indexes
+        
+                              🕥fechas => enero => 0 <= domingo
+        
+        functions(f)    => syntax creation 🖍️   
+                           keyword myFunction(parameter1, parameter2) {
+                             return `Hi ${paramater1}, you're ${paramater2} years old` 
+                           } 
+                           syntax calling 📞
+                           myFunction(argument1, argument2) // "Jessica Jones", 30
+        
+  (2) How to manipulate data?   => decisions    &&   control flow(order code)
+                                    if-else              functions calls
+                                     switch         
+                                     loops  
+                                function blocks                             
+
+🔴VALIDATIONS    vs     CONDITIONS
+    process              expression    
+    options                boolean
+    return x          return true/false 
+
+
+************************************************************************************************
+FUNCTIONAL PROGRAMMING IS DIVIDED IN => 2 parts    
+🔴First Class Citizens => code flexibility => not only function as values         
+                                               accept as argument
+                                               return functions inside functions 
+            
+
+🔴Higher-order functions =>  can take other functions as arguments or return them as results
+                              abstract actions
+
+
+🔴Difference Between FCF(first citizens functions) && HOF(higher order functions)
+    (1) FCF => focus on the capabilities of functions themselves, treating them as data
+    (2) HOF => emphasize the ability of functions to accept and/or return other functions
+**************************************************************************************************

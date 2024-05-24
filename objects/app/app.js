@@ -175,3 +175,26 @@ iphone.mostrarProducto();
 const total = iphone.calcularTotal(tarifa);
 console.log(`precio total con tarifa es ${total.toFixed(2)}`);
 /* *************************************************************** */
+
+// REACT PRINCIPLES {props} 🔥
+
+// destructuring objects
+const jessica_jones = {
+  first: "jessica",
+  last: "jones",
+  city: "new york",
+  lawyers: {
+    main: "math murdock",
+  },
+};
+
+/* const firstName = jessica_jones.first;
+const lastName = jessica_jones.last; */
+
+const {
+  first,
+  last,
+  city: america,
+  lawyers: { main: master },
+} = jessica_jones;
+//console.log(first, last, america, master);
