@@ -168,30 +168,15 @@ const parsedData3 = JSON.parse(names3);
 
 // console.log(parsedData3);
 
-/* fetching a file.json */
+/* ******************************************************************** */
+// fetching a file.json
 
 /* fetch("users2.json")
   .then((res) => res.json())
   .catch((err) => console.error("my error es en la url", err));
  */
 
-/* fetchData();
-
-async function fetchData() {
-  try {
-    const poke_name = document.getElementById("my_pokemon").value.toLowerCase();
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${poke_name}`);
-    const x = await res.json(); // aseguramos que sea formato json
-    //console.log(x.name);
-    const pokemon_sprite = x.sprites.front_default; // action
-    console.log(pokemon_sprite);
-    const img = document.getElementById("my_sprite");
-    img.src = pokemon_sprite;
-    img.style.display = "block";
-  } catch (err) {
-    console.error(err);
-  }
-} */
+/* ******************************************************************** */
 
 async function getCryptoPrice(coin) {
   const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coin}&vs_currencies=usd`;

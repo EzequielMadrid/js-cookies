@@ -103,8 +103,12 @@ const startLights = (tiempo, id, bgColor) => {
     }
   });
 }; */
-
 /* *********************************************************** */
+
+/*
+más fetch... (manejado errores) 
+ */
+
 // tours API
 const url = "https://www.course-api.com/react-tours-project";
 //console.log(fetch(url));
@@ -133,3 +137,32 @@ const btn = document.getElementById("extra_btn");
 btn.addEventListener("click", getTours);
  */
 /* *********************************************************** */
+
+// poke API
+async function fetchData() {
+  try {
+    const input = document.getElementById("input").value.toLowerCase();
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${input}`);
+
+    // manejando error si la url NO es correcta
+    if (!res.ok) {
+      const msg = `Ups! Error ${res.status} no lo deja avanzar`;
+      throw new Error(msg);
+    }
+
+    const data = await res.json();
+    //console.log(data);
+
+    // manejando si input NO coincide
+    if (!data.sprites || !data.sprites.front_default) {
+      throw new Error("¡Ups! No se encontró la img");
+    }
+
+    const pokemonSprite = data.sprites.front_default;
+    const my_img = document.getElementById("pokemonSprite");
+    my_img.src = pokemonSprite;
+    my_img.style.display = "block";
+  } catch (error) {
+    console.log(error);
+  }
+}
