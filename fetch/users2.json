@@ -1,0 +1,17 @@
+[
+  {
+    "character": "john snow",
+    "age": "20",
+    "isStark": false
+  },
+  {
+    "character": "rob stark",
+    "age": "24",
+    "isStark": true
+  },
+  {
+    "character": "sansa stark",
+    "age": "18",
+    "isStark": true
+  }
+]

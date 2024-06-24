@@ -1,0 +1,6 @@
+{
+  "character": "john snow",
+  "age": 21,
+  "isStark": false,
+  "hobbies": ["hunting", "sword duels", "reading"]
+}
