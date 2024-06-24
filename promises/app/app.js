@@ -103,12 +103,8 @@ const startLights = (tiempo, id, bgColor) => {
     }
   });
 }; */
+
 /* *********************************************************** */
-
-/*
-más fetch... (manejado errores) 
- */
-
 // tours API
 const url = "https://www.course-api.com/react-tours-project";
 //console.log(fetch(url));
